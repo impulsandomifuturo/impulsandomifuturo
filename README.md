@@ -11,7 +11,7 @@ Para calcular el ingreso laboral utilizamos como fuente de información la Encue
 **Grupos de regiones:** 	 
 * **Norte**	Ancash, La Libertad, Piura, Cajamarca, Lambayeque, Tumbes 
 * **Sur**	Arequipa, Apurímac, Cusco, Moquegua, Puno, Tacna 	
-*** Centro**	Ica, Junín, Ayacucho, Pasco, Huancavelica, Huánuco 	
+* **Centro**	Ica, Junín, Ayacucho, Pasco, Huancavelica, Huánuco 	
 * **Selva**	Madre De Dios, Loreto, San Martin, Amazonas, Ucayali 
 * **Lima**	Lima y Callao 	 	 	 
 
