@@ -4,7 +4,7 @@ Esta página fue creada por el Grupo de Análisis para el Desarrollo (GRADE) y e
 
 ¡Muchas gracias por visitarnos!
 
-**¿Cómo calculamos el ingreso laboral?**
+##**¿Cómo calculamos el ingreso laboral?**
 
 Para calcular el ingreso laboral utilizamos como fuente de información la Encuesta Nacional de Hogares (ENAHO) del año 2020 publicada por el Instituto Nacional de Estadística (INEI). En esta encuesta, identificamos a todas las personas que se encontraban trabajando y sumamos todos sus ingresos laborales monetarios netos*. Posteriormente, calculamos un promedio por nivel educativo (primaria, secundaria y estudios superiores) y por regiones. 
 
