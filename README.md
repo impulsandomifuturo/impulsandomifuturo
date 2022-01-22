@@ -1,10 +1,10 @@
-### Hola 👋, Bienvenido al respositorio de ✨Impulsando mi Futuro✨
+# !Hola! Bienvenido al repositorio de ✨Impulsando mi Futuro✨
 
 Esta página fue creada por el Grupo de Análisis para el Desarrollo (GRADE) y el Banco Inter-Americano de Desarrollo (BID) como parte de una campaña informativa para apoderados de estudiantes de educación básica sobre la importancia del retorno a clases. 
 
 ¡Muchas gracias por visitarnos!
 
-##**¿Cómo calculamos el ingreso laboral?**
+## ¿Cómo calculamos el ingreso laboral?
 
 Para calcular el ingreso laboral utilizamos como fuente de información la Encuesta Nacional de Hogares (ENAHO) del año 2020 publicada por el Instituto Nacional de Estadística (INEI). En esta encuesta, identificamos a todas las personas que se encontraban trabajando y sumamos todos sus ingresos laborales monetarios netos*. Posteriormente, calculamos un promedio por nivel educativo (primaria, secundaria y estudios superiores) y por regiones. 
 
@@ -15,5 +15,5 @@ Para calcular el ingreso laboral utilizamos como fuente de información la Encue
 * **Selva**	Madre De Dios, Loreto, San Martin, Amazonas, Ucayali 
 * **Lima**	Lima y Callao 	 	 	 
 
-* Estos son aquellos ingresos después de descontar por impuestos u otros descuentos de ley. Además, por ingresos laborales consideramos todos los ingresos provenientes de su trabajo principal y secundario. Es decir, incluye aquellos que reciben como un sueldo o salario por parte de una empresa u organización (trabajo dependiente) o cuando trabajan por su propia cuenta (trabajo independiente). Adicionalmente, incluimos también todo monto extraordinario gracias a su trabajo como bonificaciones, gratificaciones, CTS, etc.
+(*) Estos son aquellos ingresos después de descontar por impuestos u otros descuentos de ley. Además, por ingresos laborales consideramos todos los ingresos provenientes de su trabajo principal y secundario. Es decir, incluye aquellos que reciben como un sueldo o salario por parte de una empresa u organización (trabajo dependiente) o cuando trabajan por su propia cuenta (trabajo independiente). Adicionalmente, incluimos también todo monto extraordinario gracias a su trabajo como bonificaciones, gratificaciones, CTS, etc.
 
