@@ -6,7 +6,7 @@ Esta página fue creada por el Grupo de Análisis para el Desarrollo (GRADE) y e
 
 ## ¿Cómo calculamos el ingreso laboral?
 
-Para calcular el ingreso laboral utilizamos como fuente de información la Encuesta Nacional de Hogares (ENAHO) del año 2020 publicada por el Instituto Nacional de Estadística (INEI). En esta encuesta, identificamos a todas las personas que se encontraban trabajando, y luego sumamos todos sus ingresos laborales monetarios netos*. Posteriormente, calculamos el promedio del ingreso  por nivel educativo y por regiones. Así, logramos saber cuánto es el ingreso mensual que suele percibir una persona que terminó primaria, secundaria o educación superior completa según la región donde se encuentra. Puedes encontrar la región a la cual perteneces en la siguiente tabla:
+Para calcular el ingreso laboral utilizamos como fuente de información la Encuesta Nacional de Hogares (ENAHO) del año 2020 publicada por el Instituto Nacional de Estadística (INEI). En esta encuesta, identificamos a todas las personas que se encontraban trabajando, y luego sumamos todos sus ingresos laborales monetarios netos*. Posteriormente, calculamos el promedio del ingreso  por nivel educativo y por regiones. Así, logramos saber cuánto es el ingreso mensual que suele percibir una persona que terminó primaria, secundaria o educación superior completa según la región donde se encuentra. Puedes encontrar la región a la cual perteneces aquí:
 
 **Grupos de regiones:** 	 
 * **Norte**	Ancash, La Libertad, Piura, Cajamarca, Lambayeque, Tumbes 
