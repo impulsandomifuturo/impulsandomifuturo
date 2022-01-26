@@ -90,53 +90,56 @@
 	label define macroregion 1 "Norte" 2 "Sur" 3 "Centro" 4 "Selva" 5 "Lima"
 	label values macroregion macroregion
 
-	*3.2 Ingreso de actividad principal (ingresos netos dependiente e independiente e ingresos extraordinarios) 
+	*3.2 Ingreso de actividad principal y secundaria(ingresos netos dependiente e independiente e ingresos extraordinarios) 
 	
-	egen ylabi=rowtotal(i524e1 i530a d544t)
-	replace ylabi=. if i524e1==. & i530a==. & d544t==.
+	recode i524e1 i530a d544t i538e1 i541a (999999=.)
+
+	egen ylabi=rowtotal(i524e1 i530a d544t i538e1 i541a)
+	replace ylabi=. if i524e1==. & i530a==. & d544t==. & i538e1==. &  i541a==.
 	
-	egen b=rsum(i524e1 i530a d544t), missing
+	egen b=rsum(i524e1 i530a d544t i538e1 i541a), missing
 	assert b==ylabi
 	
-	replace ylabi=. if p507==6 // no se considera ingresos de trabajadores del hogar. 
 	replace ylabi=ylabi/12 // mensual 
-	
+
+	count if ylabi!=.
+
 	*Ajuste por inflacion (6.43% a Diciembre 2021)
 		*Fuente: https://www.bcrp.gob.pe/docs/Transparencia/Notas-Informativas/2022/nota-informativa-2022-01-06-1.pdf
 	
 	replace ylabi=ylabi*(1+ 0.0643)
 		
 	*3.3 Variable de Max. Nivel Educativo 
-	
-	gen educ_group=1 if p301a==4
-	replace educ_group=2  if p301a==6 
-	replace educ_group=3 if (p301a==8 | p301a==10)
+
+	gen educ_group=1 if p301a==3
+	replace educ_group=2 if p301a==4
+	replace educ_group=3  if p301a==5
+	replace educ_group=4  if p301a==6	
+	replace educ_group=5 if (p301a==8 | p301a==10)
 
 	*3.4 Variable de sexo
 	gen sexo=p207
-
+			
 *IV Calculo del promedio de ingresos laborales por macroregion y sexo: 
 	*Nota: Los resultados son los mismos utilizando svyset [pweight = fac500a], psu(conglome)strata(estrato) y el comando mean. 
-	
-	
-	collapse (mean) ylabi* [iw=fac500a] , by(macroregion sexo educ_group)
+
+	collapse (mean) ylabi* [iw=fac500a] , by(macroregion educ_group)
 	drop if educ_group==.
 	
 *V. Exportación de resultados 
 
-	sort macroregion sexo educ_group
-	egen newid=group(macroregion sexo)
+	sort macroregion educ_group
+	egen newid=group(macroregion )
 	reshape wide ylabi*, i(newid) j(educ_group)
 	drop newid
-	order macr* sex*  ylabi1 ylabi2  ylabi3 
-	sort sexo macroregion
-	rename ylabi1 prim_completa
-	rename ylabi2 sec_completa
-	rename ylabi3 sup_completa
-	
-	label define sexo 1 "Hombre" 2 "Mujer"
-	label values sexo sexo
-	
+	order macr*  ylabi1 ylabi2  ylabi3 
+	sort  macroregion
+	rename ylabi1 prim_incompleta
+	rename ylabi2 prim_completa
+	rename ylabi3 sec_incompleta
+	rename ylabi4 sec_completa
+	rename ylabi5 sup_completa
+
 	export excel "${dir}Retornos.xlsx", replace firstrow(var)
 	
 	************************************
